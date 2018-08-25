@@ -1,0 +1,32 @@
+html {
+    background-color: teal;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: tomato;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+#Head {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+
+    line-height: 0.1;
+    text-align: center;
+    
+}
+
+#Subtitle {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+
+    text-align: center;
+}
+
+.Paragraph {
+    color: blue;
+    font-family: 'Lato', sans-serif;
+}
