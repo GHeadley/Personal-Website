@@ -1,13 +1,31 @@
+/*
+    Color Palette:
+    Eggshell White: #f6eef2
+    Greenish Blue: #72c2d8
+    Bright Blue: #13caea
+    Grey w/ hint of blue: #6f7589
+    Dark Blue: #2b3750
+*/
+
+:root {
+    --Color-Palette-1: #e9eef1;
+    --Color-Palette-2: #788ea2;
+    --Color-Palette-3: #4fabcb;
+    --Color-Palette-4: #6f7589;
+    --Color-Palette-5: #2b3750;
+    --text-color: var(--Color-Palette-1);
+}
+
 html {
-    background-color: teal;
+    background-color: var(--Color-Palette-5);
 }
 
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: tomato;
+    background-color: var(--Color-Palette-3);
     padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    border: 5px solid var(--Color-Palette-4);
   }
 
 #Head {
@@ -16,7 +34,7 @@ body {
 
     line-height: 0.1;
     text-align: center;
-    
+    color: var(--text-color);
 }
 
 #Subtitle {
@@ -24,9 +42,22 @@ body {
     font-family: 'Lato', sans-serif;
 
     text-align: center;
+    color: var(--text-color);
 }
 
 .Paragraph {
-    color: blue;
+    color: var(--text-color);
     font-family: 'Lato', sans-serif;
+}
+
+button {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    text-align: center;
+    cursor: zoom-in;
+}
+
+div {
+    text-align: center;
 }
