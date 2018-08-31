@@ -13,7 +13,9 @@
     --Color-Palette-3: #4fabcb;
     --Color-Palette-4: #6f7589;
     --Color-Palette-5: #2b3750;
+    --color-test: rgba(111,117,137, 0.5);
     --text-color: var(--Color-Palette-1);
+    --Font: 'Lato', sans-serif;
 }
 
 html {
@@ -21,43 +23,74 @@ html {
 }
 
 body {
-    width: 600px;
-    margin: 0 auto;
+    margin: 0;
+}
+
+main {
+    width: 50%;
+    min-width: 700px;
+    max-width: 1000px;
+    margin: 14px auto;
     background-color: var(--Color-Palette-3);
     padding: 0 20px 20px 20px;
     border: 5px solid var(--Color-Palette-4);
-  }
+}
 
-#Head {
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-test);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
 
-    line-height: 0.1;
-    text-align: center;
+    header > h1 {
+        font-size: 40px;
+        font-family: var(--Font);
+        padding-top: 5px;
+        margin: 0px;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    header > h2 {
+        font-size: 25px;
+        font-family: var(--Font);
+        margin: 0;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    header > nav {
+        width: calc(50% + 50px);
+        min-width: 750px;
+        max-width: 1050px;
+        text-align: center;
+    }
+    
+    header > nav > ul {
+        font-size: 20px;
+        font-family: var(--Font);
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 9px auto;
+    }
+        
+        header > nav > ul > li > a {
+            padding-right: 15px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+p {
     color: var(--text-color);
-}
-
-#Subtitle {
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
-
-    text-align: center;
-    color: var(--text-color);
-}
-
-.Paragraph {
-    color: var(--text-color);
-    font-family: 'Lato', sans-serif;
-}
-
-button {
-    color: black;
-    font-family: 'Lato', sans-serif;
-    width: 50%;
-    text-align: center;
-    cursor: zoom-in;
-}
-
-div {
-    text-align: center;
+    font-family: var(--Font);
 }
